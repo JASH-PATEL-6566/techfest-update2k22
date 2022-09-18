@@ -1,0 +1,75 @@
+.event-container {
+    overflow-y: scroll;
+    display: flex;
+    position: relative;
+}
+
+.event-card-container {
+    width: 80%;
+    height: 30em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    position: relative;
+    justify-content: center;
+}
+
+.event-card {
+    width: 30%;
+    position: relative;
+    margin-inline: 1.25em;
+    margin-block: 0.8em;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+        rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+        rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.514);
+    overflow: hidden;
+    width: 100%;
+    height: 10%;
+    transition: 0.7s ease-out;
+    display: flex;
+    justify-content: flex-start;
+    /* border-radius: 0.8em; */
+}
+
+.event-card:hover .overlay {
+    height: 20%;
+    /* border-radius: 0.8em; */
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-weight: 700;
+    font-size: 1.4em;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.event-card:hover .text {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    transition: 0.6s ease;
+}

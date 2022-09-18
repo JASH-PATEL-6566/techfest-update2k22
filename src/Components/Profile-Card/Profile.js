@@ -1,5 +1,5 @@
 import React from 'react'
-import $ from 'jquery'
+import './profile.css'
 
 function Profile() {
 

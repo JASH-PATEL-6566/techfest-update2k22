@@ -1,6 +1,7 @@
 import React from 'react'
 import test from '../../Images/test.jpg'
 import { Carousel } from 'react-responsive-carousel';
+import './carousel.css'
 // import $ from "jquery";
 
 function Carouse() {
