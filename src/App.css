@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,900&display=swap");
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+section {
+    margin: 1em 0 0.5em 0;
+}
+
+:root {
+    --background-color: #2d3436;
+}
+
+.brand-logo {
+    margin: auto !important;
+    /* margin-top: -15px !important; */
+    height: 4em;
+}
+
+.container nav {
+    height: 10vh !important;
+    display: flex;
+    background-color: var(--background-color) !important;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-container h1 {
+    margin: auto;
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+}
+
+.slider-profile {
+    width: 80%;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+/* .slider-profile::before,
+.slider-profile::after {
+    height: fit-content;
+    width: 15em;
+} */
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: fit-content;
+}
+.slider-profile {
+    margin: auto;
+}
+.slider-profile {
+    margin: auto;
+}
+
+.slider-profile .slide-track {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+}
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+/* .slider-profile .slide {
+    height: fit-content;
+    width: 20em;
+} */
+
+/* Pofile Card */
+.profile-card {
+    flex: 1 1 30%;
+    max-width: 300px;
+    background: rgb(255, 255, 255);
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.7em;
+    box-shadow: 0 0 2px 0 rgb(177, 177, 177);
+    transition: 0.3s;
+    margin: 0.9em 0.8em;
+}
+
+.profile-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px -5px #2d3436;
+}
+
+.profile-icon {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 25px 0 10px 0;
+}
+
+.profile-position {
+    font-size: 14px;
+    color: #777;
+}
+
+.faculty-coordinator {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.slide-track-faculty {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
