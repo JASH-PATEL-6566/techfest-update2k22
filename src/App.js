@@ -1,4 +1,5 @@
 import './App.css';
+import AutoCard from './Components/Auto-profileCard/AutoCard';
 import Carouse from './Components/Carousel/Carousel';
 import EventCard from './Components/EventCard/EventCard';
 import Navbar from './Components/Navbar/Navbar';
@@ -10,6 +11,8 @@ function App() {
       <Navbar />
       <Carouse />
       <EventCard />
+      <Profile />
+      <AutoCard />
       <Profile />
     </div>
   );

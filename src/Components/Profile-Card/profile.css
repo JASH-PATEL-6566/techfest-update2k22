@@ -1,6 +1,7 @@
 .profile-card {
     flex: 1 1 30%;
     max-width: 300px;
+    height: 15em;
     background: rgb(255, 255, 255);
     padding: 20px 60px;
     display: flex;
@@ -12,10 +13,10 @@
     margin: 0.9em 0.8em;
 }
 
-.profile-card:hover {
+/* .profile-card:hover {
     transform: scale(1.1);
     box-shadow: 0 0 15px -5px #2d3436;
-}
+} */
 
 .profile-icon {
     height: 100px;

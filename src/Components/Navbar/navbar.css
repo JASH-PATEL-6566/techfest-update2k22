@@ -8,4 +8,30 @@ nav {
     height: 10vh !important;
     display: flex;
     background-color: #2d3436;
+    display: flex;
+    padding-inline: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: white;
+}
+
+nav h1 span {
+    color: red;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-inline: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
