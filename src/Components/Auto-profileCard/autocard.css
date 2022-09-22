@@ -77,6 +77,15 @@
 #radio3:checked ~ .first {
     margin-left: -40%;
 }
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+#radio6:checked ~ .first {
+    margin-left: -100%;
+}
 
 .navigation-auto {
     position: absolute;
@@ -105,5 +114,14 @@
     background-color: black;
 }
 #radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: black;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: black;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color: black;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6 {
     background-color: black;
 }
