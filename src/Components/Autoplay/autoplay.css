@@ -1,0 +1,9 @@
+.autoplay {
+    display: flex;
+    justify-content: center;
+}
+
+.outer-autoplay {
+    margin: auto;
+    width: 100%;
+}
