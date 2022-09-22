@@ -5,7 +5,7 @@ import React from 'react'
 import './autocard.css'
 
 function AutoCard() {
-    const number_of_cards = 2;
+    // const number_of_cards = 2;
 
     var counter = 1;
 
