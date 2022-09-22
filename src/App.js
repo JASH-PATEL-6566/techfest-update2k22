@@ -14,6 +14,7 @@ function App() {
       <Profile />
       <AutoCard />
       <Profile />
+
     </div>
   );
 }

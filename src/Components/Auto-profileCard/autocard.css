@@ -10,22 +10,25 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10em;
+    border-radius: 0.7em;
 }
 
 .slider-auto {
-    width: 18.6em;
+    width: 60%;
     /* width: fit-content; */
     height: 500px;
     height: 18em;
     /* border: 2px solid black; */
     overflow: hidden;
     position: relative;
+    border-radius: 0.7em;
 }
 
 .slides-auto {
-    width: 500%;
+    width: fit-content;
     height: 500px;
     display: flex;
+    border-radius: 0.7em;
 }
 
 .slides-auto input {
@@ -33,8 +36,10 @@
 }
 
 .slide-auto {
-    width: 20%;
+    min-width: 20%;
     transition: 2s;
+    position: relative;
+    display: inline;
 }
 
 /* .slide-auto img {
@@ -44,13 +49,14 @@
 
 .navigation-manual {
     position: absolute;
-    width: 20em;
+    width: 100%;
     /* width: 800px; */
     /* margin-top: -40px; */
     bottom: 0.3em;
 
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 .manual-btn {
@@ -72,28 +78,29 @@
     margin-left: 0;
 }
 #radio2:checked ~ .first {
-    margin-left: -20%;
+    margin-left: -60%;
 }
-#radio3:checked ~ .first {
-    margin-left: -40%;
+/* #radio3:checked ~ .first {
+    margin-left: 0;
 }
 #radio4:checked ~ .first {
     margin-left: -60%;
 }
 #radio5:checked ~ .first {
-    margin-left: -80%;
+    margin-left: -60%;
 }
 #radio6:checked ~ .first {
-    margin-left: -100%;
-}
+    margin-left: -60%;
+} */
 
 .navigation-auto {
     position: absolute;
     display: flex;
     /* width: 800px; */
-    width: 20em;
+    width: 100%;
     justify-content: center;
     bottom: 0.3em;
+    margin: auto;
 }
 
 .navigation-auto div {
@@ -105,6 +112,7 @@
 
 .navigation-auto div:not(:last-child) {
     margin-right: 1em;
+    /* z-index: 1; */
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
@@ -113,7 +121,7 @@
 #radio2:checked ~ .navigation-auto .auto-btn2 {
     background-color: black;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3 {
+/* #radio3:checked ~ .navigation-auto .auto-btn3 {
     background-color: black;
 }
 #radio4:checked ~ .navigation-auto .auto-btn4 {
@@ -124,4 +132,4 @@
 }
 #radio6:checked ~ .navigation-auto .auto-btn6 {
     background-color: black;
-}
+} */

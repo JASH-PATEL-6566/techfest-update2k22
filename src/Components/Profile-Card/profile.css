@@ -1,6 +1,6 @@
 .profile-card {
     flex: 1 1 30%;
-    max-width: 300px;
+    max-width: fit-content;
     height: 15em;
     background: rgb(255, 255, 255);
     padding: 20px 60px;
@@ -10,7 +10,7 @@
     border-radius: 0.7em;
     box-shadow: 0 0 2px 0 rgb(177, 177, 177);
     transition: 0.3s;
-    margin: 0.9em 0.8em;
+    margin: 0.9em 0;
 }
 
 /* .profile-card:hover {
