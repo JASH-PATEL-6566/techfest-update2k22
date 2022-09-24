@@ -1,5 +1,5 @@
 # Live Demo
-  [https://updates2k22.netlify.app/updates2k22](https://updates2k22.netlify.app/updates2k22)
+  [https://updates2k22.netlify.app/](https://updates2k22.netlify.app/)
 
 
 # Getting Started with Create React App
