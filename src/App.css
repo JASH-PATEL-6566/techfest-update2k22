@@ -6,12 +6,70 @@
     font-family: "Nunito", sans-serif;
 }
 
+body {
+    position: relative;
+}
 section {
     margin: 1em 0 0.5em 0;
 }
 
 .container {
     height: 100vh;
+
+    /* position: relative; */
+}
+
+.rules {
+    /* position: absolute; */
+    margin: auto;
+    width: 90%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 111111;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+.rules_container {
+    /* position: absolute; */
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules_div {
+    width: 33%;
+    height: 90%;
+    background-color: white;
+    border-radius: 0.7em;
+    display: flex;
+    flex-direction: column;
+}
+
+.rules_div img {
+    border-radius: 0.7em;
+    height: 85%;
+    /* width: fit-content; */
+    margin: 1em auto;
+    /* opacity: 0.2; */
+}
+
+.register-btn {
+    width: fit-content;
+    margin: 0.3em auto;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 0.3em 1.7em;
+    border-radius: 0.7em;
+}
+
+.register-btn:hover {
+    background-color: rgb(255, 56, 56);
+    cursor: pointer;
 }
 
 .home {

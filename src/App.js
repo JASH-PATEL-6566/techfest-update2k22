@@ -6,10 +6,14 @@ import Navbar from './Components/Navbar/Navbar';
 import Profile from './Components/Profile-Card/Profile';
 import Autoplay from './Components/Autoplay/Autoplay';
 import Azz from './Components/Autoplay/Autoplay_mobile';
+import Rules from './Components/RulesPage/Rules';
 
 function App() {
   return (
     <div className="container">
+      <div className="rules">
+        <Rules />
+      </div>
       <Navbar />
       <Carouse />
       <EventCard />
@@ -19,6 +23,7 @@ function App() {
       <Autoplay />
       <Azz />
     </div>
+
   );
 }
 
